@@ -1,0 +1,24 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <h3>JavaScript Validation API</h3>
+        <ul>
+            <li>Constraint Validation DOM Method</li>
+        </ul>
+        <input type="number" id="numb" min="100" max="300" required>
+        <button onclick="validationMethod()">Submit</button>
+        <p id="msg"></p>
+
+        <script>
+            function validationMethod(){
+                const myInput = document.getElementById("numb");
+                if(myInput.checkValidity()){
+                    document.getElementById("msg").innerHTML = "Valid Input";
+                } else{
+                    document.getElementById("msg").innerHTML = "Invalid Input";
+                }
+            }
+        </script>
+    </body>
+</html>
