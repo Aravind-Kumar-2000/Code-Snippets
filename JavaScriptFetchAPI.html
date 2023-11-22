@@ -1,0 +1,16 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <h3>JavaScript Fetch API</h3>
+        <button onclick="fetchAPI()">Click to View</button>
+        <script>
+            async function fetchAPI(){
+                const APIresponse =await fetch("https://fakestoreapi.com/products");
+                const data =await APIresponse.json();
+                console.log(data);
+            }
+            fetchAPI();
+        </script>
+    </body>
+</html>
