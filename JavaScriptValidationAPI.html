@@ -5,6 +5,8 @@
         <h3>JavaScript Validation API</h3>
         <ul>
             <li>Constraint Validation DOM Method</li>
+            <li>Constraint Validation DOM Property</li>
+            <li>Validity Property</li>
         </ul>
         <input type="number" id="numb" min="100" max="300" required>
         <button onclick="validationMethod()">Submit</button>
@@ -15,8 +17,10 @@
                 const myInput = document.getElementById("numb");
                 if(myInput.checkValidity()){
                     document.getElementById("msg").innerHTML = "Valid Input";
-                } else{
-                    document.getElementById("msg").innerHTML = "Invalid Input";
+                } else if(myInput.validity.rangeOverflow){
+                    document.getElementById("msg").innerHTML = "Value must not be greater than 300";
+                } else if(myInput.validity.rangeUnderflow){
+                    document.getElementById("msg").innerHTML = "Value must not be lesser than 100";
                 }
             }
         </script>
