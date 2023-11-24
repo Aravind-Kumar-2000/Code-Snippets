@@ -7,7 +7,7 @@ function list(numb) {
 
 marks.forEach(list);
 
-//2. map method
+//2. map() method
 const marks01 = [1, 2, 3, 4, 5];
 
 function markList(pass) {
@@ -16,7 +16,7 @@ function markList(pass) {
 
 console.log(marks01.map(markList));
 
-//3. filter method
+//3. filter() method
 
 //Example no.1
 const marks02 = [95, 55, 60, 40, 78, 85];
@@ -36,7 +36,7 @@ function healthyFruits(fruit) {
 
 console.log(fruits.filter(healthyFruits));
 
-//4. reduce method
+//4. reduce() method
 const marks03 = [95, 55, 60, 78, 40];
 
 function totalMarks(total, marks03) {
@@ -45,7 +45,7 @@ function totalMarks(total, marks03) {
 
 console.log(marks03.reduce(totalMarks));
 
-//5. every method
+//5. every() method
 const marks04 = [95, 55, 60, 40, 78, 85];
 
 function passMark(pass) {
@@ -54,7 +54,7 @@ function passMark(pass) {
 
 console.log(marks04.every(passMark));
 
-//6. some method
+//6. some() method
 const marks05 = [95, 55, 60, 40, 78, 85];
 
 function passMark(pass) {
@@ -63,7 +63,7 @@ function passMark(pass) {
 
 console.log(marks05.some(passMark));
 
-//7. find method
+//7. find() method
 const marks06 = [1, 2, 3, 4, 5];
 
 function lists(numb) {
@@ -72,7 +72,7 @@ function lists(numb) {
 
 console.log(marks06.find(lists));
 
-//8. sort method
+//8. sort() method
 let skills = [
   "HTML",
   "CSS",
