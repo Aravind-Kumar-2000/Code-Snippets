@@ -6,3 +6,12 @@ function list(numb){
 }
 
 marks.forEach(list);
+
+//2. map method
+const mark = [1,2,3,4,5];
+
+function markList(pass){
+    return pass + 10;
+}
+
+console.log(mark.map(markList));
