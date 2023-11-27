@@ -1,5 +1,4 @@
 //Creating a Bank Account details using Class method
-
 class bankAccount {
   constructor(firstName, lastName, accountNo, balance, phoneNo) {
     this.firstName = firstName;
@@ -93,11 +92,26 @@ class specialAccount extends bankAccount {
 }
 
 const VipAccount = new specialAccount(
-  (firstName = "xyz"),
-  (lastName = "xyz"),
-  (accountNo = 1111111111),
-  (balance = 10000),
-  (phoneNo = 3987456321)
+  firstName = "xyz",
+  lastName = "xyz",
+  accountNo = 1111111111,
+  balance = 1000),
+  phoneNo = 3987456321,
 );
 
 console.log(VipAccount);
+console.log(VipAccount.firstName);
+console.log(VipAccount.lastName);
+console.log(VipAccount.accountNo);
+console.log(VipAccount.balance);
+console.log(VipAccount.phoneNo);
+
+console.log((VipAccount.SetFirstName = "xyz"));
+console.log((VipAccount.SetLastName = "xyz"));
+console.log((VipAccount.SetAccountNo = "22222222"));
+console.log((VipAccount.SetPhoneNo = "13456789"));
+console.log((VipAccount.SetBalance = "30000"));
+
+console.log(VipAccount.deposit(10000));
+console.log(VipAccount.withdrawal(22000));
+console.log(VipAccount.withdrawal(10000));
