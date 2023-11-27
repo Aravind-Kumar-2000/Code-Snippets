@@ -95,7 +95,7 @@ const VipAccount = new specialAccount(
   firstName = "xyz",
   lastName = "xyz",
   accountNo = 1111111111,
-  balance = 1000),
+  balance = 1000,
   phoneNo = 3987456321,
 );
 
