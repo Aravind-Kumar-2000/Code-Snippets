@@ -1,8 +1,8 @@
 //1. forEach() method
 const marks = [25, 35, 45, 55, 65];
 
-function list(num) {
-  console.log(num);
+function list(number) {
+  console.log(number);
 }
 
 marks.forEach(list);
